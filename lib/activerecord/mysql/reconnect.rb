@@ -27,6 +27,7 @@ module Activerecord::Mysql::Reconnect
   HANDLE_ERROR = [
     ActiveRecord::StatementInvalid,
     Mysql2::Error,
+    ActiveRecord::ConnectionNotEstablished
   ]
 
   @@handle_r_error_messages = {
